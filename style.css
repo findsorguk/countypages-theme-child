@@ -11,6 +11,34 @@
 */
 
 /*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Typography
+3.0 Elements
+4.0 Forms
+5.0 Navigation
+	5.1 Links
+	5.2 Menus
+6.0 Accessibility
+7.0 Alignments
+8.0 Clearings
+9.0 Widgets
+10.0 Content
+	10.1 Posts and pages
+	10.2 Asides
+	10.3 Comments
+	10.4 Latest Posts area
+11.0 Infinite scroll
+12.0 Media
+	12.1 Captions
+	12.2 Galleries
+13.0 Plugins
+    13.1 Network Latest Posts
+    13.2 Table of Contents Plus
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -18,4 +46,43 @@
 --------------------------------------------------------------*/
 .updated.entry-date {
     display: inherit;
+}
+
+/*--------------------------------------------------------------
+13.0 Plugins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+13.2 Table of Contents Plus
+--------------------------------------------------------------*/
+/* Styles the TOCs in finds.org.uk style */
+#toc_container {
+    max-width: 700px;
+    border: none;
+    padding: 10px 0;
+    margin: 0 0 20px;
+}
+
+.toc_title {
+    color: #AAA;
+    font-size: 20px;
+}
+
+#toc_container a {
+    line-height: 18px;
+}
+
+#toc_container p.toc_title {
+    text-align: left;
+}
+
+#toc_container ul li ul li a {
+    color: #5bc0de;
+}
+
+#toc_container ul li {
+    margin-top: 10px;
+}
+
+#toc_container ul li ul li {
+    margin-top: 0;
 }
