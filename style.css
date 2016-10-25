@@ -9,3 +9,13 @@
  Text Domain:  county-pages-finds-recording-guides
  Tags: blue, white, black, three-columns, responsive-layout
 */
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.updated.entry-date {
+    display: inherit;
+}

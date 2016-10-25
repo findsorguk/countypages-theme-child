@@ -14,3 +14,8 @@ function countypages_child_enqueue_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'countypages_child_enqueue_styles' );
+
+/**
+ * Custom template tags for this child theme.
+ */
+require get_stylesheet_directory() . '/inc/template-tags.php';
