@@ -1,3 +1,5 @@
+## Wordpress
+
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -15,4 +17,8 @@ wp-content/plugins/hello.php
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+
+## PhpStorm
+
+.idea/*
 
