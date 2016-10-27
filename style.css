@@ -36,6 +36,7 @@
 13.0 Plugins
     13.1 Network Latest Posts
     13.2 Table of Contents Plus
+    13.3 Display Posts Shortcode
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -85,4 +86,30 @@
 
 #toc_container ul li ul li {
     margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+13.3 Display Posts Shortcode
+--------------------------------------------------------------*/
+/* Displays all posts as a grid of pics on 'Browse All' page */
+.listing-item {
+    max-width: 270px;
+    float: left;
+    min-height: 400px;
+    margin: 10px 10px 0 0;
+}
+
+.listing-item .image {
+    display: block;
+}
+
+.listing-item .title {
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.listing-item .excerpt-dash {
+    display: none;
 }
