@@ -11,7 +11,7 @@
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS (see parent theme for full contents):
 ----------------------------------------------------------------
 1.0 Normalize
 2.0 Typography
@@ -40,6 +40,72 @@
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+/* Make the hierarchy of headings smaller and more consistent*/
+h1.entry-title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.entry-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #e5e5e5;
+    max-width: 700px;
+}
+
+.entry-content h1 + p {
+    margin-top: 10px;
+}
+
+.entry-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.entry-content h1 + h2 {
+    margin-top: 4px;
+}
+
+.entry-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.entry-content h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.entry-content h4:before {
+    content: '- ';
+}
+
+.entry-content h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.entry-content h5:before {
+    content: '-- ';
+}
+
+.entry-content h6 {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+.entry-content h6:before {
+    content: '--- ';
+}
+
+/*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -55,6 +121,16 @@
     max-width: 700px;
 }
 
+/* Separate the footer from the content on post pages */
+body.single footer.entry-footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #e5e5e5;
+}
+
+
 /*--------------------------------------------------------------
 13.0 Plugins
 --------------------------------------------------------------*/
@@ -65,12 +141,10 @@
 #toc_container {
     max-width: 700px;
     border: none;
-    padding: 10px 0;
-    margin: 0 0 20px;
+    padding: 0;
 }
 
 .toc_title {
-    color: #AAA;
     font-size: 20px;
 }
 
