@@ -45,8 +45,14 @@
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+/* Display updated date (hidden in parent theme) */
 .updated.entry-date {
     display: inherit;
+}
+
+/* Limit width of paragraphs and other content for easier reading*/
+.hentry p, .gallery, .responsive-tabs .responsive-tabs__panel, li {
+    max-width: 700px;
 }
 
 /*--------------------------------------------------------------
