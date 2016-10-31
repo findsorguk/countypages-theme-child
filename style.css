@@ -53,10 +53,13 @@ h1.entry-title {
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #e5e5e5;
     max-width: 700px;
+}
+
+.entry-content h1 > span {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
 }
 
 .entry-content h1 + p {
