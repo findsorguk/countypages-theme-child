@@ -21,7 +21,7 @@ function countypages_child_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'countypages' ),
+		_x( 'Created on %s', 'post date', 'countypages' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -34,7 +34,6 @@ function countypages_child_posted_on() {
 
 	// If the post has been modified, add 'last updated' information
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 		$update_string = '<time class="entry-date updated" datetime="%1$s">%2$s</time>';
 
 		$update_string = sprintf( $update_string,
@@ -43,7 +42,7 @@ function countypages_child_posted_on() {
 		);
 
 		$updated_on = sprintf(
-			_x( 'Last updated %s', 'updated date', 'countypages' ),
+			_x( 'Last edited on %s', 'updated date', 'countypages' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $update_string . '</a>'
 		);
 		$editor_byline = sprintf(
