@@ -44,11 +44,17 @@ class CountyPages_Child_Icons_Menu_Walker extends Walker_Nav_Menu {
                     case 'Home':
                         $args->link_before = $this->generate_icon_tag( 'home' );
                         break;
-                    case 'Browse All':
-                        $args->link_before = $this->generate_icon_tag( 'th' );
+                    case 'How To and General Guides':
+                        $args->link_before = $this->generate_icon_tag( 'info-sign' );
                         break;
-                    case 'Browse By Category': //Primary site only
-                        $args->link_before = $this->generate_icon_tag( 'list-ul' );
+                    case 'Guides A-Z by Image':
+                        $args->link_before = $this->generate_icon_tag( 'picture' );
+                        break;
+                    case 'Guides by Use and Function':
+                        $args->link_before = $this->generate_icon_tag( 'wrench' );
+                        break;
+                    case 'Guides by Time Period':
+                        $args->link_before = $this->generate_icon_tag( 'time' );
                         break;
                     default:
                         $args->link_before = $this->generate_icon_tag( 'file' );
