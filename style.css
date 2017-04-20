@@ -186,8 +186,18 @@ body.single footer.entry-footer {
 .listing-item {
     max-width: 270px;
     float: left;
-    min-height: 400px;
+    min-height: 325px;
     margin: 10px 10px 0 0;
+}
+
+#display-posts-front-page .listing-item {
+    min-height: initial;
+    max-width: 150px;
+}
+
+#display-posts-front-page .listing-item .title {
+    text-align: center;
+    line-height: 22px;
 }
 
 .listing-item .image {
