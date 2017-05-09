@@ -204,6 +204,10 @@ body.single footer.entry-footer {
     display: block;
 }
 
+.listing-item a {
+    text-align: center;
+}
+
 .listing-item .title {
     display: block;
     font-size: 16px;
@@ -213,11 +217,9 @@ body.single footer.entry-footer {
 
 /*Minify layout for thumbnail view*/
 .display-posts-thumbnail .listing-item {
-    max-width: 270px;
     float: left;
     min-height: 200px;
     margin: 10px 10px 0 0;
-    overflow-wrap: break-word;
     max-width: 200px;
 }
 
