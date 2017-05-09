@@ -211,6 +211,23 @@ body.single footer.entry-footer {
     margin-bottom: 5px;
 }
 
+/*Minify layout for thumbnail view*/
+.display-posts-thumbnail .listing-item {
+    max-width: 270px;
+    float: left;
+    min-height: 200px;
+    margin: 10px 10px 0 0;
+    overflow-wrap: break-word;
+    max-width: 200px;
+}
+
+.display-posts-thumbnail .listing-item a {
+    overflow-wrap: break-word;
+    max-width: 150px;
+    line-height: 1.2em;
+}
+/*End minify!*/
+
 .listing-item .excerpt-dash {
     display: none;
 }
