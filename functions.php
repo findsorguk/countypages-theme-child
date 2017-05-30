@@ -66,3 +66,20 @@ class CountyPages_Child_Icons_Menu_Walker extends Walker_Nav_Menu {
         }
     }
 }
+
+/**
+ * Register a shortcode [count-guides] to display a count of the published guides.
+ */
+add_shortcode( 'count-guides', 'countypages_child_count_guides' );
+
+/**
+ * Shortcode function for [count-guides] shortcode.
+ *
+ * @return string count of guides
+ */
+
+function countypages_child_count_guides( $attr ) {
+    $count_posts = wp_count_posts( );
+    $published_posts = $count_posts->publish;
+    return $published_posts;
+}
