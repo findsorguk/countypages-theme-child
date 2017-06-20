@@ -193,7 +193,7 @@ body.single footer.entry-footer {
 /*--------------------------------------------------------------
 13.3 Display Posts Shortcode
 --------------------------------------------------------------*/
-/* Displays all posts as a grid of pics on 'Browse All' page */
+/* Displays all posts as a grid of pics on pages */
 .listing-item {
     max-width: 270px;
     float: left;
@@ -229,7 +229,7 @@ body.single footer.entry-footer {
 /*Minify layout for thumbnail view*/
 .display-posts-thumbnail .listing-item {
     float: left;
-    min-height: 200px;
+    min-height: 216px;
     margin: 10px 10px 0 0;
     max-width: 200px;
 }
