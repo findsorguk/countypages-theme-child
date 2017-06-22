@@ -202,7 +202,7 @@ body.single footer.entry-footer {
 .listing-item {
     max-width: 270px;
     float: left;
-    min-height: 250px;
+    min-height: 260px;
     margin: 10px 10px 0 0;
 }
 
@@ -239,7 +239,7 @@ body.single footer.entry-footer {
 /*Minify layout for thumbnail view*/
 .display-posts-thumbnail .listing-item {
     float: left;
-    min-height: 220px;
+    min-height: 230px;
     margin: 10px 10px 0 0;
     max-width: 200px;
 }
