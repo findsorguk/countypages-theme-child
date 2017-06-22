@@ -202,7 +202,7 @@ body.single footer.entry-footer {
 .listing-item {
     max-width: 270px;
     float: left;
-    min-height: 325px;
+    min-height: 210px;
     margin: 10px 10px 0 0;
 }
 
@@ -250,6 +250,12 @@ body.single footer.entry-footer {
     line-height: 1.2em;
 }
 /*End minify!*/
+
+.display-posts-listing .listing-item a {
+    overflow-wrap: break-word;
+    max-width: 200px;
+    line-height: 1.2em;
+}
 
 .listing-item .excerpt-dash {
     display: none;
