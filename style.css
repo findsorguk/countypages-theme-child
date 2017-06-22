@@ -202,7 +202,7 @@ body.single footer.entry-footer {
 .listing-item {
     max-width: 270px;
     float: left;
-    min-height: 210px;
+    min-height: 250px;
     margin: 10px 10px 0 0;
 }
 
