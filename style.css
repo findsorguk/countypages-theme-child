@@ -220,6 +220,11 @@ body.single footer.entry-footer {
     display: block;
 }
 
+.listing-item img.size-small {
+    height: 200px;
+    width: 200px;
+}
+
 .listing-item a {
     text-align: center;
 }
