@@ -233,7 +233,7 @@ body.single footer.entry-footer {
     display: block;
     font-size: 16px;
     line-height: 28px;
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 /*Minify layout for thumbnail view*/
