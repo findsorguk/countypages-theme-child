@@ -30,7 +30,7 @@ require get_stylesheet_directory() . '/inc/template-tags.php';
 class CountyPages_Child_Icons_Menu_Walker extends Walker_Nav_Menu {
 
     function generate_icon_tag ( $iconName ) {
-        $iconWrap = '<i class="icon-%s"></i>';
+        $iconWrap = '<i class="fa fa-%s"></i>';
         return sprintf( $iconWrap, $iconName );
     }
 
@@ -45,16 +45,16 @@ class CountyPages_Child_Icons_Menu_Walker extends Walker_Nav_Menu {
                         $args->link_before = $this->generate_icon_tag( 'home' );
                         break;
                     case 'How To and General Guides':
-                        $args->link_before = $this->generate_icon_tag( 'info-sign' );
+                        $args->link_before = $this->generate_icon_tag( 'info-circle' );
                         break;
                     case 'Guides A-Z by Image':
-                        $args->link_before = $this->generate_icon_tag( 'picture' );
+                        $args->link_before = $this->generate_icon_tag( 'image' );
                         break;
                     case 'Guides by Use and Function':
-                        $args->link_before = $this->generate_icon_tag( 'wrench' );
+                        $args->link_before = $this->generate_icon_tag( 'gavel' );
                         break;
                     case 'Guides by Time Period':
-                        $args->link_before = $this->generate_icon_tag( 'time' );
+                        $args->link_before = $this->generate_icon_tag( 'clock-o' );
                         break;
                     default:
                         $args->link_before = $this->generate_icon_tag( 'file' );
