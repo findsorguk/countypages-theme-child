@@ -51,7 +51,7 @@
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
@@ -74,14 +74,14 @@
     <!-- WordPress HTML -->
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-            <a href="https://finds.org.uk" title="Go to the homepage"><img src="https://finds.org.uk/assets/logos/pas.jpg"
+            <a href="<?= get_base_url(); ?>" title="Go to the homepage"><img src="<?= get_base_url(); ?>/assets/logos/pas.jpg"
                                                                        alt="The Scheme's logo"
                                                                        width="213" height="104"/></a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
 
-        <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+        <div class="breadcrumbs" xmlns:v="https://rdf.data-vocabulary.org/#">
             You are here:
             <?php if(function_exists('bcn_display'))
             {
@@ -104,8 +104,8 @@
             echo
 
             '<div class="site-sponsorship">
-                <a href="http://www.hlf.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
-                                       src="https://finds.org.uk/assets/logos/HLF_english_compact_pantone_150px.jpg"
+                <a href="https://www.hlf.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
+                                       src="<?= get_base_url(); ?>/assets/logos/HLF_english_compact_pantone_150px.jpg"
                                                                            alt="The Heritage Lottery Fund logo"/></a>
             </div><!-- .site-sponsorship -->';
         }
